@@ -41,9 +41,9 @@ click = "*"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "*"
-flake8 = "*"
 isort = "*"
-pylint = "*"
+pyright = "*"
+ruff = "*"
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest = ">=7.2.0"{% endif %}
 pre-commit = "*"
@@ -53,6 +53,10 @@ black = "*"
 [tool.poetry.scripts]
 {{ cookiecutter.project_slug }} = '{{ cookiecutter.project_slug }}.cli:main'
 {%- endif %}
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
 
 [build-system]
 requires = ["poetry>=0.12"]

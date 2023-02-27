@@ -1,15 +1,15 @@
 {
+  "project_name": "Python Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "full_name": "Keaton Guderian",
   "email": "keagud@protonmail.com",
   "github_username": "keagud",
-  "project_name": "Python Project",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "A python project",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pytest": "y",
   "command_line_interface": ["Argparse", "Click", "No command-line interface"],
-  "open_source_license": [ "BSD-3-Clause", "0BSD", "MIT",  "ISC", "Apache-2.0", "GPL-3.0-only", "Unlicense", "Not open source"],
+  "open_source_license": [ "0BSD", "BSD-3-Clause", "MIT",  "ISC", "Apache-2.0", "GPL-3.0-only", "Unlicense", "Not open source"],
   "_copy_without_render": [
     "*.github/workflows/*.yml"
   ]
