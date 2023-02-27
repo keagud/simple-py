@@ -23,6 +23,8 @@ def main():
     return 0
 {%- endif %}
 
+def main():
+    pass
 
 if __name__ == "__main__":
     sys.exit(main())  # pragma: no cover
