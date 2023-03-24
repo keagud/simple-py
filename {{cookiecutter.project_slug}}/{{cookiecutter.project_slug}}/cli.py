@@ -21,10 +21,13 @@ def main():
     """Console script for {{cookiecutter.project_slug}}."""
     parser = argparse.ArgumentParser()
     return 0
-{%- endif %}
+
+
+{% else %}
 
 def main():
     pass
 
+{%- endif %}
 if __name__ == "__main__":
     sys.exit(main())  # pragma: no cover
