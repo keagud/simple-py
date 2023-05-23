@@ -16,6 +16,12 @@ def main():
 {% elif cookiecutter.command_line_interface|lower == 'argparse' %}
 import argparse
 
+
+def get_args():
+    parser = argparse.ArgumentParser()
+    # add args here
+    return parser.parse_args()
+
 def main():
 
     """Console script for {{cookiecutter.project_slug}}."""
