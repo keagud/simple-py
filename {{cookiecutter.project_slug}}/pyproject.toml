@@ -49,7 +49,7 @@ pytest = ">=7.2.0"{% endif %}
 pre-commit = "*"
 black = "*"
 
-{% if cookiecutter.command_line_interface|lower == 'click' -%}
+{% if cookiecutter.command_line_interface|lower == 'click' or cookiecutter.command_line_interface|lower == 'argparse' -%}
 [tool.poetry.scripts]
 {{ cookiecutter.project_slug }} = '{{ cookiecutter.project_slug }}.cli:main'
 {%- endif %}
